@@ -8262,7 +8262,7 @@ html {
             rgba(14, 13, 13, 0.78) 0%,
             rgba(18, 16, 16, 0.64) 44%,
             rgba(18, 16, 16, 0.42) 100%),
-        url("./assets/images/service-fit-bg.jpg") center center / cover no-repeat;
+        url("../assets/images/service-fit-bg.jpg") center center / cover no-repeat;
     color: #fff;
     isolation: isolate;
 }
@@ -8360,7 +8360,7 @@ html {
                 rgba(14, 13, 13, 0.80) 0%,
                 rgba(18, 16, 16, 0.66) 56%,
                 rgba(18, 16, 16, 0.44) 100%),
-            url("./assets/images/service-fit-bg.jpg") center center / cover no-repeat;
+            url("../assets/images/service-fit-bg.jpg") center center / cover no-repeat;
     }
 
     .service-fit-story__panel {
