@@ -687,7 +687,7 @@ window.SITE_CONFIG = {
             {
                 question: "Does Roofix perform roofing work directly?",
                 answer:
-                    "No. Roofix is an independent provider-matching platform. Roofing companies are independent and handle estimates, pricing, timelines, warranties, permits, and project work directly."
+                    "No. we is an independent provider-matching platform. Roofing companies are independent and handle estimates, pricing, timelines, warranties, permits, and project work directly."
             },
             {
                 question: "Are roofing providers independent?",
@@ -702,13 +702,8 @@ window.SITE_CONFIG = {
             {
                 question: "Can I compare multiple roofing providers?",
                 answer:
-                    "Roofix is designed to help homeowners organize comparison around service intent, roof type, estimate details, and provider fit."
+                    "We is designed to help homeowners organize comparison around service intent, roof type, estimate details, and provider fit."
             },
-            {
-                question: "Does Roofix guarantee pricing or availability?",
-                answer:
-                    "No. Pricing, availability, timelines, warranties, and project terms are handled by independent providers and may vary."
-            }
         ],
 
         services: [
