@@ -1,14 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap");
 
 :root {
-    /* Base */
+    
     --color-bg: #FCFCFB;
     --color-bg-soft: #F6F5F2;
     --color-bg-muted: #EFEDEA;
     --color-surface: #FFFFFF;
     --color-surface-soft: #F9F8F6;
 
-    /* Text / Ink */
+    
     --color-ink: #111111;
     --color-black: #171515;
     --color-charcoal: #242121;
@@ -16,44 +16,44 @@
     --color-text-soft: #5F5B58;
     --color-text-muted: #8B8782;
 
-    /* Roofing red accent */
+    
     --color-accent: #D94A43;
     --color-accent-strong: #C73532;
     --color-accent-dark: #941D24;
     --color-accent-deep: #7F1118;
     --color-accent-soft: #F4D9D6;
 
-    /* Sky / image support */
+    
     --color-sky: #9FD2F3;
     --color-sky-light: #DDF1FC;
     --color-sky-soft: #EEF8FE;
     --color-sky-deep: #4A9FDD;
 
-    /* Borders */
+    
     --color-border: #E8E4DE;
     --color-border-strong: #D8D3CB;
     --color-line-dark: #2A2727;
 
-    /* Effects */
+    
     --shadow-soft: 0 18px 45px rgba(17, 17, 17, 0.06);
     --shadow-card: 0 12px 30px rgba(17, 17, 17, 0.05);
     --shadow-red: 0 16px 34px rgba(201, 53, 50, 0.18);
 
-    /* Buttons */
+    
     --button-bg: #111111;
     --button-bg-hover: #D94A43;
     --button-text: #FFFFFF;
 
-    /* Header */
+    
     --header-bg: rgba(252, 252, 251, 0.86);
     --header-border: rgba(232, 228, 222, 0.9);
 
-    /* Dark strip */
+    
     --strip-bg: #171515;
     --strip-text: #FFFFFF;
     --strip-muted: rgba(255, 255, 255, 0.68);
 
-    /* Layout */
+    
     --container: 1160px;
     --container-wide: 1280px;
     --header-height: 82px;
@@ -230,7 +230,7 @@ main {
     gap: 12px;
 }
 
-/* Buttons */
+
 
 .btn {
     position: relative;
@@ -310,7 +310,7 @@ main {
     align-items: center;
 }
 
-/* Header */
+
 
 .site-header {
     position: relative;
@@ -534,7 +534,7 @@ main {
     background: currentColor;
 }
 
-/* Mobile menu */
+
 
 .mobile-menu {
     position: fixed;
@@ -720,7 +720,7 @@ main {
     line-height: 1.6;
 }
 
-/* Hero */
+
 
 .home-hero {
     position: relative;
@@ -954,7 +954,7 @@ main {
     background: #fff;
 }
 
-/* Inner page hero */
+
 
 .page-hero {
     position: relative;
@@ -1056,7 +1056,7 @@ main {
     font-size: 14px;
 }
 
-/* Black trust strip */
+
 
 .trust-strip {
     background: var(--strip-bg);
@@ -1094,7 +1094,7 @@ main {
     color: #fff;
 }
 
-/* How it works */
+
 
 .steps-section {
     padding: 72px 0 60px;
@@ -1199,7 +1199,7 @@ main {
     font-weight: 700;
 }
 
-/* Cards */
+
 
 .card-grid {
     display: grid;
@@ -1344,7 +1344,7 @@ main {
     min-height: 390px;
 }
 
-/* Split sections */
+
 
 .split-panel {
     display: grid;
@@ -1429,7 +1429,7 @@ main {
     color: var(--color-accent);
 }
 
-/* Editorial / notice */
+
 
 .editorial-grid {
     display: grid;
@@ -1517,7 +1517,7 @@ main {
     line-height: 1.6;
 }
 
-/* Estimate / question rows */
+
 
 .detail-list {
     display: grid;
@@ -1570,7 +1570,7 @@ main {
     font-size: 14px;
 }
 
-/* Marquee */
+
 
 .marquee-section {
     overflow: hidden;
@@ -1624,7 +1624,7 @@ main {
     }
 }
 
-/* Slideshow */
+
 
 .slideshow-grid {
     display: grid;
@@ -1710,7 +1710,7 @@ main {
     object-fit: cover;
 }
 
-/* FAQ */
+
 
 .faq-layout {
     display: grid;
@@ -1784,7 +1784,7 @@ main {
     line-height: 1.7;
 }
 
-/* CTA */
+
 
 .cta-strip {
     position: relative;
@@ -1840,7 +1840,7 @@ main {
     border-color: #111;
 }
 
-/* Forms */
+
 
 .form-panel {
     padding: clamp(24px, 4vw, 36px);
@@ -1972,7 +1972,7 @@ select.form-control {
     color: var(--color-accent-dark);
 }
 
-/* Map */
+
 
 .map-layout {
     display: grid;
@@ -2105,7 +2105,7 @@ select.form-control {
     font-weight: 700;
 }
 
-/* Footer */
+
 
 .site-footer {
     background: var(--color-black);
@@ -2232,7 +2232,7 @@ select.form-control {
     font-size: 12px;
 }
 
-/* Cookie banner */
+
 
 .policy-banner {
     position: fixed;
@@ -2289,7 +2289,7 @@ select.form-control {
     gap: 10px;
 }
 
-/* Blog baseline */
+
 
 .blog-grid {
     display: grid;
@@ -2355,7 +2355,7 @@ select.form-control {
     font-size: 14px;
 }
 
-/* Reveal */
+
 
 [data-reveal] {
     opacity: 0;
@@ -2370,7 +2370,7 @@ select.form-control {
     transform: translateY(0);
 }
 
-/* Responsive */
+
 
 @media (max-width: 1200px) {
     :root {
@@ -2877,7 +2877,7 @@ select.form-control {
     transition: transform 0.24s var(--ease), background 0.24s var(--ease), border-color 0.24s var(--ease);
 }
 
-/* Roof type sections inside services page */
+
 
 .roof-systems {
     overflow: hidden;
@@ -3084,9 +3084,7 @@ select.form-control {
     opacity: 0.72;
 }
 
-/* =========================
-   FIX: sticky header on all pages
-========================= */
+
 
 [data-site-header] {
     position: sticky;
@@ -3106,10 +3104,7 @@ select.form-control {
     background: rgba(252, 252, 251, 0.96);
     box-shadow: 0 12px 28px rgba(17, 17, 17, 0.05);
 }
-/* =========================
-   GLOBAL FIXED HEADER
-   Works on all pages
-========================= */
+
 
 html {
     scroll-padding-top: calc(var(--header-height) + 18px);
@@ -3140,9 +3135,7 @@ html {
     z-index: 4000 !important;
 }
 
-/* =========================
-   HOME HERO PROOF BADGES FIX
-========================= */
+
 
 .home-hero__proof {
     align-self: center;
@@ -3201,7 +3194,7 @@ html {
     line-height: 1.35;
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .home-hero__proof {
         justify-self: stretch;
@@ -3215,7 +3208,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 700px) {
     .home-hero__proof {
         grid-template-columns: 1fr;
@@ -3239,9 +3232,7 @@ html {
     }
 }
 
-/* =========================
-   HOME HERO PROOF BADGES HOVER + ICON CENTER
-========================= */
+
 
 .home-hero__proof {
     align-self: center;
@@ -3253,7 +3244,7 @@ html {
     gap: 10px;
 }
 
-/* Card */
+
 .proof-badge {
     position: relative;
     width: 100%;
@@ -3274,7 +3265,7 @@ html {
         box-shadow 0.28s var(--ease);
 }
 
-/* Soft red line on hover */
+
 .proof-badge::before {
     content: "";
     position: absolute;
@@ -3287,7 +3278,7 @@ html {
     pointer-events: none;
 }
 
-/* Hover */
+
 .proof-badge:hover {
     transform: translateY(-4px);
     border-color: rgba(217, 74, 67, 0.5);
@@ -3299,7 +3290,7 @@ html {
     opacity: 1;
 }
 
-/* Icon circle centered */
+
 .proof-badge__icon {
     position: relative;
     z-index: 1;
@@ -3334,7 +3325,7 @@ html {
     stroke-width: 2.2;
 }
 
-/* Icon hover */
+
 .proof-badge:hover .proof-badge__icon {
     transform: rotate(-4deg) scale(1.06);
     background: var(--color-accent);
@@ -3342,7 +3333,7 @@ html {
     color: #fff;
 }
 
-/* Text above hover layer */
+
 .proof-badge>span:last-child {
     position: relative;
     z-index: 1;
@@ -3365,7 +3356,7 @@ html {
     line-height: 1.35;
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .home-hero__proof {
         justify-self: stretch;
@@ -3379,7 +3370,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 700px) {
     .home-hero__proof {
         grid-template-columns: 1fr;
@@ -3405,9 +3396,7 @@ html {
     }
 }
 
-/* =========================
-   HOME HERO TITLE EXACT 2 LINES DESKTOP
-========================= */
+
 
 .home-hero .home-hero__title {
     display: block !important;
@@ -3438,9 +3427,7 @@ html {
     }
 }
 
-/* =========================
-   HOME HERO TITLE MOBILE POLISH
-========================= */
+
 
 @media (max-width: 768px) {
     .home-hero__content {
@@ -3490,10 +3477,7 @@ html {
     }
 }
 
-/* =========================
-   HOME POPULAR SERVICES
-   isolated section
-========================= */
+
 
 .home-popular {
     position: relative;
@@ -3572,7 +3556,7 @@ html {
     gap: 24px;
 }
 
-/* Make generated service cards square only in this section */
+
 .home-popular__grid .photo-card,
 .home-popular__grid .service-card {
     width: 100%;
@@ -3582,7 +3566,7 @@ html {
     border-radius: 22px;
 }
 
-/* Better content spacing inside square cards */
+
 .home-popular__grid .photo-card__content {
     padding: 24px;
 }
@@ -3598,7 +3582,7 @@ html {
     line-height: 1.55;
 }
 
-/* Premium hover only for this section */
+
 .home-popular__grid .photo-card:hover {
     transform: translateY(-6px);
     border-color: rgba(217, 74, 67, 0.58);
@@ -3612,7 +3596,7 @@ html {
     color: #fff;
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .home-popular {
             padding: 39px 0;
@@ -3628,7 +3612,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
     .home-popular {
             padding: 34px 0;
@@ -3670,9 +3654,7 @@ html {
     }
 }
 
-/* =========================
-   STEP CARD ICON BORDER HOVER
-========================= */
+
 
 .step-card {
     transition:
@@ -3717,10 +3699,7 @@ html {
     color: #fff;
 }
 
-/* =========================
-   HOME QUALITY SECTION
-   isolated section
-========================= */
+
 
 .home-quality {
     position: relative;
@@ -3834,7 +3813,7 @@ html {
     color: var(--color-accent);
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .home-quality {
         padding: 39px 0;
@@ -3849,7 +3828,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
     .home-quality {
         padding: 34px 0;
@@ -3883,10 +3862,7 @@ html {
     }
 }
 
-/* =========================
-   HOME COMPARE STRIP
-   isolated dark horizontal section
-========================= */
+
 
 .home-compare-strip {
     position: relative;
@@ -4036,7 +4012,7 @@ html {
     line-height: 1.58;
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .home-compare-strip {
         padding: 39px 0;
@@ -4060,7 +4036,7 @@ html {
     }
 }
 
-/* Small tablet / mobile */
+
 @media (max-width: 768px) {
     .home-compare-strip {
         padding: 34px 0;
@@ -4092,7 +4068,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 480px) {
     .home-compare-strip__container {
         width: min(100% - 24px, var(--container));
@@ -4116,10 +4092,7 @@ html {
     }
 }
 
-/* =========================
-   HOME PLATFORM NOTICE
-   isolated section
-========================= */
+
 
 .home-platform {
     position: relative;
@@ -4294,7 +4267,7 @@ html {
     font-weight: 700;
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .home-platform {
         padding: 39px 0;
@@ -4316,7 +4289,7 @@ html {
     }
 }
 
-/* Small tablet / mobile */
+
 @media (max-width: 768px) {
     .home-platform {
         padding: 34px 0;
@@ -4349,7 +4322,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 480px) {
     .home-platform__container {
         width: min(100% - 24px, var(--container));
@@ -4388,10 +4361,7 @@ html {
     }
 }
 
-/* =========================
-   HOME FAQ + CTA SECTION
-   reduced vertical spacing
-========================= */
+
 
 .home-faq-cta {
     position: relative;
@@ -4411,9 +4381,7 @@ html {
     }
 }
 
-/* =========================
-   GLOBAL CTA STRIP COMPACT + LIGHT GLARE EFFECT
-========================= */
+
 
 .cta-strip {
     position: relative;
@@ -4501,7 +4469,7 @@ html {
     padding: 12px 18px;
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .cta-strip__inner {
         grid-template-columns: 1fr;
@@ -4519,7 +4487,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 640px) {
     .cta-strip {
         border-radius: 20px;
@@ -4553,10 +4521,7 @@ html {
     }
 }
 
-/* =========================
-   SERVICES PAGE HERO
-   custom dark photo gradient
-========================= */
+
 
 .services-hero {
     background: #111010;
@@ -4640,7 +4605,7 @@ html {
     border: 1px solid rgba(217, 74, 67, 0.34);
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .services-hero .page-hero__bg::after {
         background:
@@ -4658,7 +4623,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 640px) {
     .services-hero .page-hero__bg img {
         object-position: 62% center;
@@ -4686,10 +4651,7 @@ html {
     }
 }
 
-/* =========================
-   SERVICES PAGE COMPACT SECTIONS
-   Half vertical padding only for selected services sections
-========================= */
+
 
 .services-section--compact {
     padding-top: 10px;
@@ -4707,10 +4669,7 @@ html {
     }
 }
 
-/* =========================
-   SERVICES PROVIDER FIT LENS
-   isolated dark horizontal section
-========================= */
+
 
 .services-fit-lens {
     position: relative;
@@ -4888,7 +4847,7 @@ html {
     }
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .services-fit-lens {
         padding: 39px 0;
@@ -4909,7 +4868,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
     .services-fit-lens {
         padding: 34px 0;
@@ -4967,10 +4926,7 @@ html {
     }
 }
 
-/* =========================
-   SERVICES HOMEOWNER QUESTIONS
-   compact, no card-in-card layout
-========================= */
+
 
 .services-questions {
     position: relative;
@@ -5110,7 +5066,7 @@ html {
     line-height: 1.62;
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .services-questions {
         padding: 39px 0;
@@ -5130,7 +5086,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
     .services-questions {
         padding: 34px 0;
@@ -5178,9 +5134,7 @@ html {
     }
 }
 
-/* =========================
-   SERVICES QUESTIONS DESKTOP CENTERED TITLE
-========================= */
+
 
 @media (min-width: 1025px) {
     .services-questions__layout {
@@ -5230,9 +5184,7 @@ html {
     }
 }
 
-/* =========================
-   SERVICES QUESTIONS BACKGROUND PHOTO
-========================= */
+
 
 .services-questions {
     position: relative;
@@ -5263,9 +5215,7 @@ html {
     z-index: 1;
 }
 
-/* =========================
-   SERVICES QUESTIONS BG — BRIGHTER PHOTO
-========================= */
+
 
 .services-questions {
     background:
@@ -5284,7 +5234,7 @@ html {
             rgba(252, 252, 251, 0.32));
 }
 
-/* Mobile — чуть плотнее, чтобы текст читался */
+
 @media (max-width: 768px) {
     .services-questions {
         background:
@@ -5296,9 +5246,7 @@ html {
     }
 }
 
-/* =========================
-   SERVICES QUESTIONS ITEMS — FROSTED SQUARE BACKGROUND
-========================= */
+
 
 .services-questions__list {
     border-top: 0;
@@ -5363,7 +5311,7 @@ html {
     -webkit-backdrop-filter: blur(10px);
 }
 
-/* Desktop: keep beautiful 3-column grid */
+
 @media (min-width: 1025px) {
     .services-questions__list {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -5380,7 +5328,7 @@ html {
     }
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .services-questions__list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -5392,7 +5340,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
     .services-questions__list {
         grid-template-columns: 1fr;
@@ -5406,9 +5354,7 @@ html {
     }
 }
 
-/* =========================
-   SERVICES QUESTIONS ITEMS — COMPACT HEIGHT
-========================= */
+
 
 .services-questions__item {
     min-height: 112px;
@@ -5434,7 +5380,7 @@ html {
     line-height: 1.45;
 }
 
-/* Desktop */
+
 @media (min-width: 1025px) {
     .services-questions__item {
         min-height: 90px;
@@ -5443,7 +5389,7 @@ html {
     }
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .services-questions__item {
         min-height: 110px;
@@ -5452,7 +5398,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
     .services-questions__item {
         min-height: auto;
@@ -5466,12 +5412,9 @@ html {
     }
 }
 
-/* =========================
-   SERVICES ESTIMATE CLARITY
-   tablet + mobile compact cards
-========================= */
 
-/* Tablet */
+
+
 @media (max-width: 1024px) {
     #estimate-clarity .editorial-grid {
         grid-template-columns: 1fr;
@@ -5532,7 +5475,7 @@ html {
     }
 }
 
-/* Small tablets + phones */
+
 @media (max-width: 768px) {
     #estimate-clarity .editorial-grid {
         gap: 22px;
@@ -5573,7 +5516,7 @@ html {
     }
 }
 
-/* Mobile extra compact */
+
 @media (max-width: 480px) {
     #estimate-clarity .section-title {
         font-size: clamp(32px, 11vw, 44px);
@@ -5594,9 +5537,7 @@ html {
     }
 }
 
-/* =========================
-   ESTIMATE CLARITY ICON CARDS
-========================= */
+
 
 #estimate-clarity .detail-row__num {
     display: grid;
@@ -5612,7 +5553,7 @@ html {
     stroke-width: 2.2;
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     #estimate-clarity .detail-row__num {
         background: var(--color-accent-soft);
@@ -5630,7 +5571,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
     #estimate-clarity .detail-row__num svg {
         width: 16px;
@@ -5638,7 +5579,7 @@ html {
     }
 }
 
-/* SERVICES QUESTIONS ICONS */
+
 
 .services-questions__num {
     display: grid;
@@ -5659,10 +5600,7 @@ html {
     }
 }
 
-/* =========================
-   ABOUT WHY ROOFIX STRIP
-   isolated horizontal layout
-========================= */
+
 
 .about-why-strip {
     position: relative;
@@ -5721,7 +5659,7 @@ html {
     line-height: 1.76;
 }
 
-/* Custom ticker, no global marquee classes */
+
 
 .about-why-strip__ticker {
     position: relative;
@@ -5806,7 +5744,7 @@ html {
     }
 }
 
-/* Tablet */
+
 
 @media (max-width: 1024px) {
     .about-why-strip {
@@ -5835,7 +5773,7 @@ html {
     }
 }
 
-/* Mobile */
+
 
 @media (max-width: 768px) {
     .about-why-strip {
@@ -5882,9 +5820,7 @@ html {
     }
 }
 
-/* =========================
-   ABOUT WHY STRIP — SPAN HOVERS
-========================= */
+
 
 .about-why-strip__track span {
     position: relative;
@@ -5926,17 +5862,14 @@ html {
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.18);
 }
 
-/* Чтобы hover не дергал строку слишком сильно на мобилках */
+
 @media (max-width: 768px) {
     .about-why-strip__track span:hover {
         transform: translateY(-2px);
     }
 }
 
-/* =========================
-   ABOUT HERO
-   medium dark photo gradient
-========================= */
+
 
 .about-hero {
     background: #111010;
@@ -6007,7 +5940,7 @@ html {
     border: 1px solid rgba(217, 74, 67, 0.36);
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .about-hero .page-hero__bg::after {
         background:
@@ -6025,7 +5958,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 640px) {
     .about-hero .page-hero__bg img {
         object-position: 62% center;
@@ -6049,9 +5982,7 @@ html {
     }
 }
 
-/* =========================
-   ABOUT NOTICE COLUMNS HOVER
-========================= */
+
 
 .notice-columns .notice-column {
     position: relative;
@@ -6111,9 +6042,7 @@ html {
 }
 
 
-/* =========================
-   ABOUT FAQ CARDS HOVER
-========================= */
+
 
 .faq-list[data-faq-group="about"] .faq-item {
     position: relative;
@@ -6167,7 +6096,7 @@ html {
     transform: rotate(45deg) scale(1.04);
 }
 
-/* Mobile: hover мягче, чтобы не прыгало */
+
 @media (max-width: 768px) {
 
     .notice-columns .notice-column:hover,
@@ -6176,10 +6105,7 @@ html {
     }
 }
 
-/* =========================
-   MOBILE DETAIL LIST COMPACT
-   number + text layout
-========================= */
+
 
 @media (max-width: 640px) {
     .detail-list.is-visible {
@@ -6223,10 +6149,7 @@ html {
     }
 }
 
-/* =========================
-   CONTACT HERO
-   custom full-width centered layout
-========================= */
+
 
 .contact-hero {
     position: relative;
@@ -6345,7 +6268,7 @@ html {
     background: rgba(217, 74, 67, 0.18);
 }
 
-/* Compact bottom panel */
+
 .contact-hero__panel {
     justify-self: center;
     width: min(760px, 100%);
@@ -6394,7 +6317,7 @@ html {
     line-height: 1.58;
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .contact-hero {
         min-height: auto;
@@ -6424,7 +6347,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
     .contact-hero__inner {
         width: min(100% - 32px, var(--container));
@@ -6496,9 +6419,7 @@ html {
     }
 }
 
-/* =========================
-   CONTACT HERO — CENTER TITLE FIX
-========================= */
+
 
 .contact-hero__headline {
     display: grid !important;
@@ -6529,7 +6450,7 @@ html {
     justify-self: center !important;
 }
 
-/* На мобилке тоже по центру, не слева */
+
 @media (max-width: 640px) {
 
     .contact-hero__kicker,
@@ -6544,10 +6465,7 @@ html {
     }
 }
 
-/* =========================
-   CONTACT REQUEST FORM SECTION
-   isolated compact bright form
-========================= */
+
 
 .contact-request {
     position: relative;
@@ -6701,7 +6619,7 @@ html {
     font-weight: 800;
 }
 
-/* Form panel */
+
 
 .contact-request__form-panel {
     position: relative;
@@ -6791,7 +6709,7 @@ html {
     margin-top: 2px;
 }
 
-/* Tablet */
+
 
 @media (max-width: 1024px) {
     .contact-request {
@@ -6824,7 +6742,7 @@ html {
     }
 }
 
-/* Mobile */
+
 
 @media (max-width: 768px) {
     .contact-request {
@@ -6877,10 +6795,7 @@ html {
     }
 }
 
-/* =========================
-   CONTACT REQUEST — CALM PREMIUM FIX
-   softer background + narrower form
-========================= */
+
 
 .contact-request {
     padding: 46px 0;
@@ -6889,7 +6804,7 @@ html {
         var(--color-bg-soft);
 }
 
-/* очень мягкий узор крыши, не яркий */
+
 .contact-request::before {
     background:
         linear-gradient(135deg, rgba(127, 17, 24, 0.035) 25%, transparent 25%) 0 0 / 86px 86px,
@@ -6903,7 +6818,7 @@ html {
         radial-gradient(circle at 92% 78%, rgba(17, 17, 17, 0.035), transparent 26%);
 }
 
-/* секция становится спокойнее и форма уже */
+
 .contact-request__layout {
     grid-template-columns: minmax(300px, 0.92fr) minmax(420px, 0.78fr);
     gap: 42px;
@@ -6923,7 +6838,7 @@ html {
     max-width: 520px;
 }
 
-/* левый контент спокойнее, без ярких карточек */
+
 .contact-request__steps {
     gap: 8px;
     margin-top: 22px;
@@ -6963,7 +6878,7 @@ html {
     font-size: 12px;
 }
 
-/* note меньше и спокойнее */
+
 .contact-request__note {
     margin-top: 14px;
     padding: 12px 13px;
@@ -6974,7 +6889,7 @@ html {
     font-weight: 750;
 }
 
-/* сама форма уже, не огромная */
+
 .contact-request__form-panel {
     justify-self: end;
     width: min(100%, 560px);
@@ -6991,7 +6906,7 @@ html {
         radial-gradient(circle at 100% 0%, rgba(244, 217, 214, 0.32), transparent 32%);
 }
 
-/* поля компактнее */
+
 .contact-request__form {
     gap: 11px;
 }
@@ -7022,7 +6937,7 @@ html {
     margin-top: 0;
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .contact-request {
         padding: 38px 0;
@@ -7057,7 +6972,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
     .contact-request {
         padding: 32px 0;
@@ -7102,10 +7017,7 @@ html {
     }
 }
 
-/* =========================
-   CONTACT PHOTO CARD
-   replaces map card
-========================= */
+
 
 .contact-photo-card {
     position: relative;
@@ -7193,14 +7105,14 @@ html {
     font-weight: 700;
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .contact-photo-card {
         min-height: 360px;
     }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
     .contact-photo-card {
         min-height: 300px;
@@ -7236,9 +7148,7 @@ html {
     }
 }
 
-/* =========================
-   ROOF SYSTEM LIST ICON CENTER FIX
-========================= */
+
 
 .roof-system-panel__list li {
     position: relative;
@@ -7272,7 +7182,7 @@ html {
     align-self: center;
 }
 
-/* Mobile extra fix */
+
 @media (max-width: 640px) {
     .roof-system-panel__list {
         gap: 10px;
@@ -7301,9 +7211,7 @@ html {
     }
 }
 
-/* =========================
-   CONTACT CARDS MOBILE COMPACT
-========================= */
+
 
 @media (max-width: 768px) {
     #contact-options .contact-cards {
@@ -7376,10 +7284,7 @@ html {
     }
 }
 
-/* =========================
-   CONTACT CHECKLIST
-   isolated dark horizontal section
-========================= */
+
 
 .contact-checklist {
     position: relative;
@@ -7554,7 +7459,7 @@ html {
     line-height: 1.55;
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .contact-checklist {
         padding: 39px 0;
@@ -7586,7 +7491,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
     .contact-checklist {
         padding: 34px 0;
@@ -7651,10 +7556,7 @@ html {
     }
 }
 
-/* =========================
-   CONTACT NOTICE COMPARE
-   clean right side only
-========================= */
+
 
 #contact-notice .contact-notice-compare {
     position: relative;
@@ -7797,7 +7699,7 @@ html {
     color: #fff;
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     #contact-notice .editorial-grid {
         grid-template-columns: 1fr;
@@ -7813,7 +7715,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
     #contact-notice .contact-notice-compare {
         grid-template-columns: 1fr;
@@ -7882,34 +7784,32 @@ html {
         font-size: 16px;
     }
 }
-/* =========================
-   CONTACT NOTICE COMPARE — CONTRAST COLORS
-========================= */
+
 
 #contact-notice .contact-notice-compare {
     background: rgba(255, 255, 255, 0.72);
 }
 
-/* Левая колонка справа — светлая теплая */
+
 #contact-notice .contact-notice-compare__col:first-child {
     background:
         radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 0.78), transparent 34%),
         linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(246, 245, 242, 0.86));
 }
 
-/* Правая колонка справа — мягкий красный/персиковый контраст */
+
 #contact-notice .contact-notice-compare__col:last-child {
     background:
         radial-gradient(circle at 100% 0%, rgba(255, 255, 255, 0.72), transparent 34%),
         linear-gradient(135deg, rgba(244, 217, 214, 0.82), rgba(255, 248, 246, 0.9));
 }
 
-/* Разделитель между двумя колонками */
+
 #contact-notice .contact-notice-compare__col+.contact-notice-compare__col {
     border-left: 1px solid rgba(217, 74, 67, 0.18);
 }
 
-/* Заголовочные иконки разные */
+
 #contact-notice .contact-notice-compare__col:first-child .contact-notice-compare__head-icon {
     background: rgba(255, 255, 255, 0.86);
     color: var(--color-accent-strong);
@@ -7922,7 +7822,7 @@ html {
     border-color: rgba(217, 74, 67, 0.26);
 }
 
-/* Маленькие иконки внутри списков тоже чуть разные */
+
 #contact-notice .contact-notice-compare__col:first-child .contact-notice-compare__list svg {
     background: rgba(255, 255, 255, 0.76);
     color: var(--color-accent-strong);
@@ -7933,7 +7833,7 @@ html {
     color: var(--color-accent-dark);
 }
 
-/* Hover остается аккуратный */
+
 #contact-notice .contact-notice-compare__col:first-child:hover {
     background:
         radial-gradient(circle at 100% 0%, rgba(244, 217, 214, 0.36), transparent 34%),
@@ -7946,7 +7846,7 @@ html {
         linear-gradient(135deg, rgba(244, 217, 214, 0.96), rgba(255, 250, 248, 0.96));
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
     #contact-notice .contact-notice-compare__col+.contact-notice-compare__col {
         border-left: 0;
@@ -7954,9 +7854,7 @@ html {
     }
 }
 
-/* =========================
-   CONTACT CARDS TABLET COMPACT
-========================= */
+
 
 @media (min-width: 769px) and (max-width: 1024px) {
     #contact-options .contact-cards {
@@ -8015,9 +7913,7 @@ html {
     }
 }
 
-/* =========================
-   TABLET / MOBILE CENTER SECTION TITLES
-========================= */
+
 
 @media (max-width: 1024px) {
     .section-head {
@@ -8066,9 +7962,7 @@ html {
     }
 }
 
-/* =========================
-   TABLET / MOBILE CENTER CUSTOM SECTION TITLES
-========================= */
+
 
 @media (max-width: 1024px) {
 
@@ -8116,10 +8010,7 @@ html {
     }
 }
 
-/* =========================
-   SERVICE DETAIL HERO
-   medium dark image gradient
-========================= */
+
 
 .service-detail-hero {
     background: #111010;
@@ -8130,7 +8021,7 @@ html {
     filter: saturate(1.05) contrast(1.04);
 }
 
-/* Main dark overlay — medium, not too heavy */
+
 .service-detail-hero .page-hero__bg::after {
     background:
         linear-gradient(90deg,
@@ -8146,7 +8037,7 @@ html {
             rgba(17, 16, 16, 0.30));
 }
 
-/* Text */
+
 .service-detail-hero .page-hero__content {
     color: #fff;
 }
@@ -8165,7 +8056,7 @@ html {
     color: rgba(255, 255, 255, 0.76);
 }
 
-/* Buttons */
+
 .service-detail-hero .btn--light {
     background: rgba(255, 255, 255, 0.94);
     color: var(--color-ink);
@@ -8184,7 +8075,7 @@ html {
     background: rgba(217, 74, 67, 0.18);
 }
 
-/* Right panel */
+
 .service-detail-hero .page-hero__panel {
     background: rgba(18, 16, 16, 0.56);
     border-color: rgba(255, 255, 255, 0.15);
@@ -8206,7 +8097,7 @@ html {
     border: 1px solid rgba(217, 74, 67, 0.36);
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .service-detail-hero .page-hero__bg::after {
         background:
@@ -8224,7 +8115,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 640px) {
     .service-detail-hero .page-hero__bg img {
         object-position: 62% center;
@@ -8248,10 +8139,7 @@ html {
     }
 }
 
-/* =========================
-   SERVICE FIT STORY
-   shared section for all service pages
-========================= */
+
 
 .service-fit-story {
     position: relative;
@@ -8351,7 +8239,7 @@ html {
     font-weight: 650;
 }
 
-/* Tablet */
+
 @media (max-width: 1024px) {
     .service-fit-story {
         padding: 39px 0;
@@ -8389,7 +8277,7 @@ html {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 768px) {
     .service-fit-story {
         padding: 34px 0;
@@ -8433,10 +8321,7 @@ html {
     }
 }
 
-/* =========================
-   SERVICE ASK STRIP
-   shared section for service pages
-========================= */
+
 
 .service-ask-strip {
     position: relative;
@@ -8533,7 +8418,7 @@ html {
     font-weight: 800;
 }
 
-/* Slight page-specific mood without changing layout */
+
 
 .service-ask-strip--installation .service-ask-strip__inner::before {
     background:
@@ -8559,7 +8444,7 @@ html {
         radial-gradient(circle at 100% 0%, rgba(244, 217, 214, 0.58), transparent 34%);
 }
 
-/* Tablet */
+
 
 @media (max-width: 1024px) {
     .service-ask-strip {
@@ -8594,7 +8479,7 @@ html {
     }
 }
 
-/* Mobile */
+
 
 @media (max-width: 768px) {
     .service-ask-strip {

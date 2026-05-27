@@ -352,6 +352,135 @@
         });
     };
 
+    const applyGlobalConfigReplacements = () => {
+        const replacements = [
+            {
+                from: "Roofix",
+                to: config.companyName || config.brand?.shortName || "Roofix"
+            },
+            {
+                from: "RFX-2026",
+                to: config.companyId || "RFX-2026"
+            },
+            {
+                from: "555-123-4567",
+                to: config.phone || "555-123-4567"
+            },
+            {
+                from: "+15551234567",
+                to: (config.phoneHref || "tel:+15551234567").replace("tel:", "")
+            },
+            {
+                from: "support@roofix.com",
+                to: config.email || "support@roofix.com"
+            },
+            {
+                from: "1847 Ridgeway Avenue, Denver, CO 80202, USA",
+                to: config.address?.full || "1847 Ridgeway Avenue, Denver, CO 80202, USA"
+            },
+            {
+                from: "1847 Ridgeway Avenue",
+                to: config.address?.line1 || "1847 Ridgeway Avenue"
+            },
+            {
+                from: "Denver, CO 80202, USA",
+                to: [
+                    config.address?.city,
+                    config.address?.state,
+                    config.address?.zip,
+                    config.address?.country
+                ].filter(Boolean).join(", ")
+            },
+            {
+                from: "United States",
+                to: config.serviceArea || "United States"
+            }
+        ].filter((item) => item.from && item.to && item.from !== item.to);
+
+        const replaceText = (value = "") => {
+            let nextValue = String(value);
+
+            replacements.forEach(({ from, to }) => {
+                nextValue = nextValue.split(from).join(to);
+            });
+
+            return nextValue;
+        };
+
+        const shouldSkipNode = (node) => {
+            const parent = node.parentElement;
+
+            if (!parent) return true;
+
+            return Boolean(
+                parent.closest("script, style, noscript, svg, canvas, [data-no-config-replace]")
+            );
+        };
+
+        const walker = document.createTreeWalker(
+            document.body,
+            NodeFilter.SHOW_TEXT,
+            {
+                acceptNode(node) {
+                    if (shouldSkipNode(node)) {
+                        return NodeFilter.FILTER_REJECT;
+                    }
+
+                    const value = node.nodeValue || "";
+                    const hasMatch = replacements.some(({ from }) => value.includes(from));
+
+                    return hasMatch ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+                }
+            }
+        );
+
+        const textNodes = [];
+
+        while (walker.nextNode()) {
+            textNodes.push(walker.currentNode);
+        }
+
+        textNodes.forEach((node) => {
+            node.nodeValue = replaceText(node.nodeValue);
+        });
+
+        const attrsToReplace = [
+            "title",
+            "aria-label",
+            "alt",
+            "placeholder",
+            "content",
+            "value"
+        ];
+
+        qsa("*").forEach((element) => {
+            attrsToReplace.forEach((attr) => {
+                if (!element.hasAttribute(attr)) return;
+
+                const currentValue = element.getAttribute(attr);
+                const nextValue = replaceText(currentValue);
+
+                if (currentValue !== nextValue) {
+                    element.setAttribute(attr, nextValue);
+                }
+            });
+        });
+
+        qsa('a[href^="tel:"]').forEach((link) => {
+            link.setAttribute("href", config.phoneHref || "#");
+        });
+
+        qsa('a[href^="mailto:"]').forEach((link) => {
+            link.setAttribute("href", config.emailHref || "#");
+        });
+
+        qsa("a[href*='google.com/maps'], a[data-address-link]").forEach((link) => {
+            link.setAttribute("href", config.address?.mapsUrl || "#");
+            link.setAttribute("target", "_blank");
+            link.setAttribute("rel", "noreferrer");
+        });
+    };
+
     const renderHeroNav = () => {
         qsa("[data-hero-nav]").forEach((mount) => {
             const group = mount.dataset.heroNav || "home";
@@ -914,13 +1043,15 @@
         renderHeader();
         renderFooter();
 
-        injectSimpleData();
         renderHeroNav();
         renderServiceCards();
         renderRoofTypeCards();
         renderFaq();
         renderFaqSchema();
         renderPolicyBanner();
+
+        injectSimpleData();
+        applyGlobalConfigReplacements();
 
         initStickyHeader();
         initMobileMenu();
