@@ -6051,3 +6051,177 @@ html {
         border-radius: 20px;
     }
 }
+
+/* =========================
+   ABOUT NOTICE COLUMNS HOVER
+========================= */
+
+.notice-columns .notice-column {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 0.28s var(--ease),
+        border-color 0.28s var(--ease),
+        background 0.28s var(--ease),
+        box-shadow 0.28s var(--ease);
+}
+
+.notice-columns .notice-column::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 12% 10%, rgba(217, 74, 67, 0.12), transparent 34%),
+        linear-gradient(135deg, rgba(244, 217, 214, 0.28), transparent 62%);
+    opacity: 0;
+    transition: opacity 0.28s var(--ease);
+    pointer-events: none;
+}
+
+.notice-columns .notice-column:hover {
+    transform: translateY(-5px);
+    border-color: rgba(217, 74, 67, 0.42);
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 22px 46px rgba(17, 17, 17, 0.1);
+}
+
+.notice-columns .notice-column:hover::before {
+    opacity: 1;
+}
+
+.notice-columns .notice-column>* {
+    position: relative;
+    z-index: 1;
+}
+
+.notice-columns .notice-column h3 {
+    transition: color 0.24s var(--ease);
+}
+
+.notice-columns .notice-column:hover h3 {
+    color: var(--color-accent-strong);
+}
+
+.notice-columns .notice-column .check-list svg {
+    transition:
+        transform 0.24s var(--ease),
+        color 0.24s var(--ease);
+}
+
+.notice-columns .notice-column:hover .check-list svg {
+    transform: scale(1.12) rotate(-4deg);
+    color: var(--color-accent);
+}
+
+
+/* =========================
+   ABOUT FAQ CARDS HOVER
+========================= */
+
+.faq-list[data-faq-group="about"] .faq-item {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 0.28s var(--ease),
+        border-color 0.28s var(--ease),
+        background 0.28s var(--ease),
+        box-shadow 0.28s var(--ease);
+}
+
+.faq-list[data-faq-group="about"] .faq-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 8% 0%, rgba(217, 74, 67, 0.1), transparent 34%),
+        linear-gradient(135deg, rgba(244, 217, 214, 0.22), transparent 62%);
+    opacity: 0;
+    transition: opacity 0.28s var(--ease);
+    pointer-events: none;
+}
+
+.faq-list[data-faq-group="about"] .faq-item:hover {
+    transform: translateY(-4px);
+    border-color: rgba(217, 74, 67, 0.42);
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 20px 42px rgba(17, 17, 17, 0.09);
+}
+
+.faq-list[data-faq-group="about"] .faq-item:hover::before {
+    opacity: 1;
+}
+
+.faq-list[data-faq-group="about"] .faq-item>* {
+    position: relative;
+    z-index: 1;
+}
+
+.faq-list[data-faq-group="about"] .faq-item__button {
+    transition: color 0.24s var(--ease);
+}
+
+.faq-list[data-faq-group="about"] .faq-item:hover .faq-item__button {
+    color: var(--color-accent-strong);
+}
+
+.faq-list[data-faq-group="about"] .faq-item:hover .faq-item__icon {
+    background: var(--color-accent);
+    color: #fff;
+    transform: rotate(45deg) scale(1.04);
+}
+
+/* Mobile: hover мягче, чтобы не прыгало */
+@media (max-width: 768px) {
+
+    .notice-columns .notice-column:hover,
+    .faq-list[data-faq-group="about"] .faq-item:hover {
+        transform: translateY(-2px);
+    }
+}
+
+/* =========================
+   MOBILE DETAIL LIST COMPACT
+   number + text layout
+========================= */
+
+@media (max-width: 640px) {
+    .detail-list.is-visible {
+        gap: 8px;
+    }
+
+    .detail-list.is-visible .detail-row {
+        display: grid;
+        grid-template-columns: 34px 1fr;
+        gap: 10px;
+        align-items: start;
+        min-height: auto;
+        padding: 12px 14px;
+        border-radius: 14px;
+    }
+
+    .detail-list.is-visible .detail-row__num {
+        position: static;
+        width: 32px;
+        height: 32px;
+        border-radius: 10px;
+        font-size: 11px;
+        align-self: start;
+    }
+
+    .detail-list.is-visible .detail-row__num svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .detail-list.is-visible .detail-row h3 {
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.18;
+    }
+
+    .detail-list.is-visible .detail-row p {
+        margin-top: 4px;
+        font-size: 12px;
+        line-height: 1.45;
+    }
+}
