@@ -891,7 +891,7 @@ window.SITE_CONFIG = {
         "contact.html": {
             title: "Contact Roofix | Request Roofing Provider Matches",
             description:
-                "Contact Roofix to request roofing provider comparison options for installation, replacement, repair, or inspection."
+                "Contact Roofix to request roofing provider comparison for installation, replacement, repair, or inspection."
         },
 
         "roof-installation.html": {
