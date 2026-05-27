@@ -8017,3 +8017,104 @@ html {
         color: #fff;
     }
 }
+
+/* =========================
+   TABLET / MOBILE CENTER SECTION TITLES
+========================= */
+
+@media (max-width: 1024px) {
+    .section-head {
+        justify-items: center;
+        text-align: center;
+    }
+
+    .section-head__content {
+        width: 100%;
+        max-width: 820px;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .section-title.section-title--sm {
+        width: 100%;
+        max-width: 820px;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .section-head__content .section-text,
+    .section-text {
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .section-head .text-link {
+        justify-self: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .section-title.section-title--sm {
+        max-width: 100%;
+        font-size: clamp(32px, 11vw, 46px);
+        line-height: 0.98;
+        text-align: center;
+    }
+
+    .section-head__content .section-text,
+    .section-text {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.65;
+    }
+}
+
+/* =========================
+   TABLET / MOBILE CENTER CUSTOM SECTION TITLES
+========================= */
+
+@media (max-width: 1024px) {
+
+    .home-platform__title,
+    .services-questions__title {
+        width: 100%;
+        max-width: 820px;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .home-platform__text,
+    .services-questions__text {
+        max-width: 720px;
+        margin-inline: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .home-platform__title,
+    .services-questions__title {
+        max-width: 100%;
+        font-size: clamp(32px, 11vw, 46px);
+        line-height: 0.98;
+        text-align: center;
+    }
+
+    .home-platform__text,
+    .services-questions__text {
+        max-width: 100%;
+        font-size: 14px;
+        line-height: 1.65;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .home-platform__title,
+    .services-questions__title {
+        text-align: center !important;
+        margin-inline: auto !important;
+    }
+}
