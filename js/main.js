@@ -234,7 +234,6 @@
             { label: "Home", href: "index.html" },
             { label: "Services", href: "services.html" },
             { label: "About Us", href: "about.html" },
-            { label: "Blog", href: "blog.html" },
             { label: "Contact", href: "contact.html" }
         ];
 
@@ -434,7 +433,7 @@
             mount.innerHTML = roofTypes
                 .map(
                     (type) => `
-            <article class="photo-card roof-type-card">
+            <article class="photo-card roof-type-card" id="${escapeHTML(type.id)}">
               <img
                 src="${escapeHTML(type.image)}"
                 alt="${escapeHTML(type.title)} comparison"

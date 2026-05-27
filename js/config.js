@@ -73,55 +73,25 @@ window.SITE_CONFIG = {
             children: [
                 {
                     label: "Asphalt Shingle Roofing",
-                    href: "asphalt-shingle-roofing.html"
+                    href: "services.html#asphalt-shingle"
                 },
                 {
                     label: "Metal Roofing",
-                    href: "metal-roofing.html"
+                    href: "services.html#metal-roofing"
                 },
                 {
                     label: "Flat Roof Systems",
-                    href: "flat-roof-systems.html"
+                    href: "services.html#flat-roof"
                 },
                 {
                     label: "Tile Roofing",
-                    href: "tile-roofing.html"
+                    href: "services.html#tile-roofing"
                 }
             ]
         },
         {
             label: "About Us",
             href: "about.html"
-        },
-        {
-            label: "Pages",
-            href: "about.html",
-            children: [
-                {
-                    label: "About Us",
-                    href: "about.html"
-                },
-                {
-                    label: "Contact",
-                    href: "contact.html"
-                },
-                {
-                    label: "Privacy Policy",
-                    href: "privacy-policy.html"
-                },
-                {
-                    label: "Cookie Policy",
-                    href: "cookie-policy.html"
-                },
-                {
-                    label: "Terms of Service",
-                    href: "terms-of-service.html"
-                }
-            ]
-        },
-        {
-            label: "Blog",
-            href: "blog.html"
         },
         {
             label: "Contact",
@@ -438,61 +408,61 @@ window.SITE_CONFIG = {
             id: "asphalt-shingle",
             title: "Asphalt Shingle Roofing",
             shortTitle: "Asphalt Shingle",
-            href: "asphalt-shingle-roofing.html",
+            href: "services.html#asphalt-shingle",
             icon: "layers",
             image: "./assets/images/roof-type-asphalt-shingle.jpg",
             heroImage: "./assets/images/hero-asphalt-shingle.jpg",
             eyebrow: "Roof type",
             summary:
                 "A common residential roof option with broad style availability and provider familiarity.",
-            pageTitle: "Compare Asphalt Shingle Roofing Provider Options",
+            pageTitle: "Asphalt Shingle Roofing Comparison",
             pageIntro:
-                "Roofix helps homeowners compare independent providers familiar with asphalt shingle roofing. Homeowners verify material suitability, estimate details, warranty terms, and installation scope directly."
+                "Use this section to compare questions around asphalt shingle roofing, including materials, estimate details, warranty terms, and provider experience."
         },
         {
             id: "metal-roofing",
             title: "Metal Roofing",
             shortTitle: "Metal Roofing",
-            href: "metal-roofing.html",
+            href: "services.html#metal-roofing",
             icon: "panel-top",
             image: "./assets/images/roof-type-metal.jpg",
             heroImage: "./assets/images/hero-metal-roofing.jpg",
             eyebrow: "Roof type",
             summary:
                 "A durable roof category often compared for longevity, profile, finish, and installation requirements.",
-            pageTitle: "Compare Metal Roofing Provider Options",
+            pageTitle: "Metal Roofing Comparison",
             pageIntro:
-                "Roofix helps homeowners compare independent providers familiar with metal roofing. Homeowners verify system type, fastening method, finish, estimate details, and warranty terms directly."
+                "Use this section to compare questions around metal roofing, including panel type, fastening method, finish, installation details, and warranty terms."
         },
         {
             id: "flat-roof",
             title: "Flat Roof Systems",
             shortTitle: "Flat Roof",
-            href: "flat-roof-systems.html",
+            href: "services.html#flat-roof",
             icon: "layout-panel-top",
             image: "./assets/images/roof-type-flat.jpg",
             heroImage: "./assets/images/hero-flat-roof.jpg",
             eyebrow: "Roof type",
             summary:
                 "A roof category where drainage, membrane type, flashing, and maintenance details matter.",
-            pageTitle: "Compare Flat Roof System Provider Options",
+            pageTitle: "Flat Roof System Comparison",
             pageIntro:
-                "Roofix helps homeowners compare independent providers familiar with flat roof systems. Homeowners verify slope, drainage, membrane details, flashing, maintenance, and warranty terms directly."
+                "Use this section to compare questions around flat roof systems, including drainage, membrane type, flashing, maintenance, and warranty details."
         },
         {
             id: "tile-roofing",
             title: "Tile Roofing",
             shortTitle: "Tile Roofing",
-            href: "tile-roofing.html",
+            href: "services.html#tile-roofing",
             icon: "grid-3x3",
             image: "./assets/images/roof-type-tile.jpg",
             heroImage: "./assets/images/hero-tile-roofing.jpg",
             eyebrow: "Roof type",
             summary:
                 "A premium roof look where structure, weight, underlayment, and installation details should be reviewed carefully.",
-            pageTitle: "Compare Tile Roofing Provider Options",
+            pageTitle: "Tile Roofing Comparison",
             pageIntro:
-                "Roofix helps homeowners compare independent providers familiar with tile roofing. Homeowners verify material suitability, structural requirements, underlayment, estimate details, and warranty terms directly."
+                "Use this section to compare questions around tile roofing, including structure, weight, underlayment, material suitability, and warranty terms."
         }
     ],
 
@@ -904,57 +874,6 @@ window.SITE_CONFIG = {
         ]
     },
 
-    blogPosts: [
-        {
-            title: "How to Compare Roofing Estimates",
-            href: "blog.html#compare-roofing-estimates",
-            image: "./assets/images/blog-compare-estimates.jpg",
-            category: "Estimate clarity",
-            excerpt:
-                "Learn which roofing estimate details homeowners should review before choosing an independent provider."
-        },
-        {
-            title: "Roof Replacement vs Roof Repair",
-            href: "blog.html#replacement-vs-repair",
-            image: "./assets/images/blog-replacement-vs-repair.jpg",
-            category: "Decision guide",
-            excerpt:
-                "Understand how provider conversations may differ when comparing repair and replacement paths."
-        },
-        {
-            title: "Questions to Ask Before Hiring a Roofing Provider",
-            href: "blog.html#questions-to-ask",
-            image: "./assets/images/blog-questions.jpg",
-            category: "Homeowner checklist",
-            excerpt:
-                "A clear list of questions about licensing, insurance, materials, permits, timelines, and warranties."
-        },
-        {
-            title: "Understanding Roofing Warranties",
-            href: "blog.html#roofing-warranties",
-            image: "./assets/images/blog-warranties.jpg",
-            category: "Warranty review",
-            excerpt:
-                "Review the difference between manufacturer warranties, labor warranties, exclusions, and provider terms."
-        },
-        {
-            title: "Roof Inspection Checklist",
-            href: "blog.html#inspection-checklist",
-            image: "./assets/images/blog-inspection-checklist.jpg",
-            category: "Inspection",
-            excerpt:
-                "Helpful items to discuss when comparing roof inspection and consultation providers."
-        },
-        {
-            title: "Choosing Between Asphalt and Metal Roofing",
-            href: "blog.html#asphalt-vs-metal",
-            image: "./assets/images/blog-asphalt-metal.jpg",
-            category: "Roof types",
-            excerpt:
-                "Compare basic homeowner questions for asphalt shingle and metal roofing provider conversations."
-        }
-    ],
-
     pageMeta: {
         "index.html": {
             title: "Roofix | Compare Roofing Providers With Better Clarity",
@@ -1004,35 +923,6 @@ window.SITE_CONFIG = {
                 "Compare independent roofing provider options for roof inspection, consultation, and maintenance planning."
         },
 
-        "asphalt-shingle-roofing.html": {
-            title: "Asphalt Shingle Roofing | Roofix",
-            description:
-                "Compare providers familiar with asphalt shingle roofing and verify estimates, materials, and warranties directly."
-        },
-
-        "metal-roofing.html": {
-            title: "Metal Roofing | Roofix",
-            description:
-                "Compare providers familiar with metal roofing and review material, finish, installation, and warranty questions."
-        },
-
-        "flat-roof-systems.html": {
-            title: "Flat Roof Systems | Roofix",
-            description:
-                "Compare providers familiar with flat roof systems and review drainage, membrane, flashing, and maintenance questions."
-        },
-
-        "tile-roofing.html": {
-            title: "Tile Roofing | Roofix",
-            description:
-                "Compare providers familiar with tile roofing and review material suitability, structure, underlayment, and warranties."
-        },
-
-        "blog.html": {
-            title: "Roofix Blog | Roofing Comparison Guides",
-            description:
-                "Read roofing comparison guides about estimates, warranties, roof repair, roof replacement, inspections, and roof types."
-        },
 
         "privacy-policy.html": {
             title: "Privacy Policy | Roofix",
