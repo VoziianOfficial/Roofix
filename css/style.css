@@ -7956,3 +7956,64 @@ html {
         border-top: 1px solid rgba(217, 74, 67, 0.18);
     }
 }
+
+/* =========================
+   CONTACT CARDS TABLET COMPACT
+========================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #contact-options .contact-cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        align-content: start;
+    }
+
+    #contact-options .contact-card {
+        position: relative;
+        display: block;
+        min-height: 80px;
+        padding: 18px 58px 16px 18px;
+        border-radius: 18px;
+        overflow: hidden;
+    }
+
+    #contact-options .contact-card__icon {
+        position: absolute;
+        top: 14px;
+        right: 14px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+    }
+
+    #contact-options .contact-card__icon svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    #contact-options .contact-card h3 {
+        margin: 0 0 5px;
+        font-size: 14px;
+        line-height: 1.15;
+    }
+
+    #contact-options .contact-card p,
+    #contact-options .contact-card a {
+        display: block;
+        font-size: 12.5px;
+        line-height: 1.42;
+        word-break: break-word;
+    }
+
+    #contact-options .contact-card:hover {
+        transform: translateY(-3px);
+        border-color: rgba(217, 74, 67, 0.38);
+        box-shadow: 0 16px 34px rgba(17, 17, 17, 0.08);
+    }
+
+    #contact-options .contact-card:hover .contact-card__icon {
+        background: var(--color-accent);
+        color: #fff;
+    }
+}
