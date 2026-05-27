@@ -542,7 +542,7 @@ window.SITE_CONFIG = {
         "Is tear-off and disposal included?",
         "Are permits needed?",
         "What warranty terms apply?",
-        "What should the homeowner verify?"
+        "What should I verify?"
     ],
 
     estimateClarity: [
