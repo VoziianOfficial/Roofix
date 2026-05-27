@@ -142,65 +142,73 @@
                 </div>
             </section>
 
-            <!-- =========================
-        3. BEFORE SUBMIT CHECKLIST
-      ========================== -->
-            <section class="section section--soft services-section--compact" id="request-checklist" aria-labelledby="checklistTitle">
-                <div class="container">
-                    <div class="editorial-grid">
-                        <div data-reveal>
-                            <p class="section-kicker">Before you submit</p>
-
-                            <h2 class="section-title section-title--sm" id="checklistTitle">
-                                Prepare a clear request.
-                            </h2>
-
-                            <p class="section-text">
-                                A clear roofing request helps keep provider comparison more useful.
-                                Share your project goal, urgency, location, and what you want to compare.
-                            </p>
-                        </div>
-
-                        <div class="detail-list" data-reveal>
-                            <article class="detail-row">
-                                <span class="detail-row__num">01</span>
-
-                                <div>
-                                    <h3>Service type</h3>
-                                    <p>Choose installation, replacement, repair, or inspection.</p>
-                                </div>
-                            </article>
-
-                            <article class="detail-row">
-                                <span class="detail-row__num">02</span>
-
-                                <div>
-                                    <h3>Project urgency</h3>
-                                    <p>Share whether it is storm damage, leak, or a planned upgrade.</p>
-                                </div>
-                            </article>
-
-                            <article class="detail-row">
-                                <span class="detail-row__num">03</span>
-
-                                <div>
-                                    <h3>Timeline</h3>
-                                    <p>Give an approximate timeframe for when you want the project reviewed.</p>
-                                </div>
-                            </article>
-
-                            <article class="detail-row">
-                                <span class="detail-row__num">04</span>
-
-                                <div>
-                                    <h3>Comparison goal</h3>
-                                    <p>Decide whether you want to review multiple provider options.</p>
-                                </div>
-                            </article>
-                        </div>
+        <!-- =========================
+          3. BEFORE SUBMIT CHECKLIST
+        ========================== -->
+        <section class="contact-checklist" id="request-checklist" aria-labelledby="checklistTitle">
+            <div class="contact-checklist__container">
+                <div class="contact-checklist__panel" data-reveal>
+                    <div class="contact-checklist__content">
+                        <p class="contact-checklist__kicker">Before you submit</p>
+        
+                        <h2 class="contact-checklist__title" id="checklistTitle">
+                            Prepare a clear request.
+                        </h2>
+        
+                        <p class="contact-checklist__text">
+                            A clear roofing request helps keep provider comparison more useful.
+                            Share your project goal, urgency, location, and what you want to compare.
+                        </p>
+                    </div>
+        
+                    <div class="contact-checklist__items">
+                        <article class="contact-checklist__item">
+                            <span class="contact-checklist__icon" aria-hidden="true">
+                                <i data-lucide="clipboard-list"></i>
+                            </span>
+        
+                            <div>
+                                <h3>Service type</h3>
+                                <p>Choose installation, replacement, repair, or inspection.</p>
+                            </div>
+                        </article>
+        
+                        <article class="contact-checklist__item">
+                            <span class="contact-checklist__icon" aria-hidden="true">
+                                <i data-lucide="cloud-lightning"></i>
+                            </span>
+        
+                            <div>
+                                <h3>Project urgency</h3>
+                                <p>Share whether it is storm damage, leak, or a planned upgrade.</p>
+                            </div>
+                        </article>
+        
+                        <article class="contact-checklist__item">
+                            <span class="contact-checklist__icon" aria-hidden="true">
+                                <i data-lucide="calendar-clock"></i>
+                            </span>
+        
+                            <div>
+                                <h3>Timeline</h3>
+                                <p>Give an approximate timeframe for when you want the project reviewed.</p>
+                            </div>
+                        </article>
+        
+                        <article class="contact-checklist__item">
+                            <span class="contact-checklist__icon" aria-hidden="true">
+                                <i data-lucide="git-compare-arrows"></i>
+                            </span>
+        
+                            <div>
+                                <h3>Comparison goal</h3>
+                                <p>Decide whether you want to review multiple provider options.</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
 <!-- =========================
   4. CONTACT FORM
@@ -383,22 +391,23 @@
                     </div>
 
                     <div class="map-layout">
-                        <div class="map-card" data-reveal>
-                            <div class="map-card__route" aria-hidden="true"></div>
-
-                            <span class="map-pin" aria-hidden="true">
-                                <i data-lucide="map-pin"></i>
-                            </span>
-
-                            <div class="map-card__label">
-                                <strong>Roofix contact location</strong>
-
-                                <a href="https://www.google.com/maps/search/?api=1&query=1847%20Ridgeway%20Avenue%2C%20Denver%2C%20CO%2080202%2C%20USA"
-                                    data-address-link>
-                                    <span data-address-text>1847 Ridgeway Avenue, Denver, CO 80202, USA</span>
-                                </a>
-                            </div>
-                        </div>
+            <div class="contact-photo-card" data-reveal>
+                <img src="./assets/images/contact-roof-card.jpg" alt="Premium residential roof exterior for Roofix contact section"
+                    loading="lazy" />
+            
+                <div class="contact-photo-card__overlay"></div>
+            
+                <div class="contact-photo-card__badge">
+                    <span class="contact-photo-card__icon" aria-hidden="true">
+                        <i data-lucide="home"></i>
+                    </span>
+            
+                    <div>
+                        <strong>Roofix contact support</strong>
+                        <span>Provider comparison starts with clearer roofing details.</span>
+                    </div>
+                </div>
+            </div>
 
                         <div class="contact-cards" data-reveal>
                             <article class="contact-card">

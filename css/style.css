@@ -7104,3 +7104,552 @@ html {
         height: 36px;
     }
 }
+
+/* =========================
+   CONTACT PHOTO CARD
+   replaces map card
+========================= */
+
+.contact-photo-card {
+    position: relative;
+    min-height: 420px;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    background: var(--color-black);
+    box-shadow: var(--shadow-card);
+    isolation: isolate;
+}
+
+.contact-photo-card img {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: transform 0.7s var(--ease);
+}
+
+.contact-photo-card:hover img {
+    transform: scale(1.035);
+}
+
+.contact-photo-card__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        linear-gradient(180deg, rgba(17, 17, 17, 0.08), rgba(17, 17, 17, 0.58)),
+        linear-gradient(45deg, rgba(127, 17, 24, 0.28), transparent 58%);
+}
+
+.contact-photo-card__badge {
+    position: absolute;
+    left: 28px;
+    right: 28px;
+    bottom: 28px;
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 14px;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 18px;
+    background: rgba(17, 17, 17, 0.48);
+    color: #fff;
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+.contact-photo-card__icon {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(217, 74, 67, 0.24);
+    color: #fff;
+    border: 1px solid rgba(217, 74, 67, 0.4);
+}
+
+.contact-photo-card__icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.contact-photo-card__badge strong {
+    display: block;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.25;
+    font-weight: 900;
+}
+
+.contact-photo-card__badge span {
+    margin-top: 3px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 12.5px;
+    line-height: 1.45;
+    font-weight: 700;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .contact-photo-card {
+        min-height: 360px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .contact-photo-card {
+        min-height: 300px;
+        border-radius: 22px;
+    }
+
+    .contact-photo-card__badge {
+        left: 18px;
+        right: 18px;
+        bottom: 18px;
+        grid-template-columns: 42px 1fr;
+        padding: 14px;
+    }
+
+    .contact-photo-card__icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .contact-photo-card__icon svg {
+        width: 19px;
+        height: 19px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-photo-card {
+        min-height: 280px;
+    }
+
+    .contact-photo-card__badge {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   ROOF SYSTEM LIST ICON CENTER FIX
+========================= */
+
+.roof-system-panel__list li {
+    position: relative;
+    grid-template-columns: 34px 1fr;
+    align-items: center;
+}
+
+.roof-system-panel__list li::before {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+}
+
+.roof-system-panel__list li>svg,
+.roof-system-panel__list li>i {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center !important;
+    justify-self: center !important;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 0 !important;
+    line-height: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.roof-system-panel__list li span {
+    align-self: center;
+}
+
+/* Mobile extra fix */
+@media (max-width: 640px) {
+    .roof-system-panel__list {
+        gap: 10px;
+    }
+
+    .roof-system-panel__list li {
+        grid-template-columns: 32px 1fr;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .roof-system-panel__list li::before {
+        width: 32px;
+        height: 32px;
+    }
+
+    .roof-system-panel__list li>svg,
+    .roof-system-panel__list li>i {
+        width: 16px;
+        height: 16px;
+    }
+
+    .roof-system-panel__list li span {
+        font-size: 13px;
+        line-height: 1.45;
+    }
+}
+
+/* =========================
+   CONTACT CARDS MOBILE COMPACT
+========================= */
+
+@media (max-width: 768px) {
+    #contact-options .contact-cards {
+        gap: 9px;
+    }
+
+    #contact-options .contact-card {
+        grid-template-columns: 38px 1fr;
+        gap: 11px;
+        align-items: center;
+        padding: 13px 14px;
+        border-radius: 15px;
+        min-height: auto;
+    }
+
+    #contact-options .contact-card__icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    #contact-options .contact-card__icon svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    #contact-options .contact-card h3 {
+        margin: 0 0 2px;
+        font-size: 13px;
+        line-height: 1.15;
+    }
+
+    #contact-options .contact-card p,
+    #contact-options .contact-card a {
+        font-size: 12.5px;
+        line-height: 1.35;
+        word-break: break-word;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact-options .contact-cards {
+        gap: 8px;
+    }
+
+    #contact-options .contact-card {
+        grid-template-columns: 34px 1fr;
+        gap: 10px;
+        padding: 11px 12px;
+        border-radius: 14px;
+    }
+
+    #contact-options .contact-card__icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    #contact-options .contact-card__icon svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    #contact-options .contact-card h3 {
+        font-size: 12.5px;
+    }
+
+    #contact-options .contact-card p,
+    #contact-options .contact-card a {
+        font-size: 12px;
+        line-height: 1.32;
+    }
+}
+
+/* =========================
+   CONTACT CHECKLIST
+   isolated dark horizontal section
+========================= */
+
+.contact-checklist {
+    position: relative;
+    padding: 48px 0;
+    background: var(--color-bg);
+    overflow: hidden;
+}
+
+.contact-checklist__container {
+    width: min(var(--container), calc(100% - 48px));
+    margin-inline: auto;
+}
+
+.contact-checklist__panel {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(300px, 0.72fr) minmax(0, 1.28fr);
+    gap: 32px;
+    align-items: center;
+    min-height: 250px;
+    overflow: hidden;
+    padding: clamp(26px, 4vw, 42px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-xl);
+    background:
+        radial-gradient(circle at 8% 10%, rgba(217, 74, 67, 0.22), transparent 30%),
+        radial-gradient(circle at 92% 90%, rgba(255, 255, 255, 0.08), transparent 30%),
+        linear-gradient(135deg, #100F0F, #1A1717 58%, #0C0B0B);
+    box-shadow: 0 24px 54px rgba(17, 17, 17, 0.16);
+    isolation: isolate;
+}
+
+.contact-checklist__panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.032) 1px, transparent 1px);
+    background-size: 52px 52px;
+    opacity: 0.42;
+    pointer-events: none;
+}
+
+.contact-checklist__content {
+    max-width: 500px;
+}
+
+.contact-checklist__kicker {
+    margin: 0 0 12px;
+    color: rgba(255, 255, 255, 0.66);
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.contact-checklist__title {
+    margin: 0;
+    color: #fff;
+    font-family: "Oswald", "Manrope", sans-serif;
+    font-size: clamp(32px, 4vw, 54px);
+    line-height: 0.96;
+    font-weight: 700;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+}
+
+.contact-checklist__text {
+    max-width: 500px;
+    margin: 16px 0 0;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.contact-checklist__items {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.contact-checklist__item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 12px;
+    align-items: start;
+    min-height: 118px;
+    padding: 16px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.055);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    transition:
+        transform 0.26s var(--ease),
+        border-color 0.26s var(--ease),
+        background 0.26s var(--ease),
+        box-shadow 0.26s var(--ease);
+}
+
+.contact-checklist__item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 14% 12%, rgba(217, 74, 67, 0.18), transparent 32%),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.26s var(--ease);
+    pointer-events: none;
+}
+
+.contact-checklist__item:hover {
+    transform: translateY(-4px);
+    border-color: rgba(217, 74, 67, 0.58);
+    background: rgba(255, 255, 255, 0.085);
+    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+}
+
+.contact-checklist__item:hover::before {
+    opacity: 1;
+}
+
+.contact-checklist__item>* {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-checklist__icon {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgba(217, 74, 67, 0.34);
+    border-radius: 50%;
+    background: rgba(217, 74, 67, 0.16);
+    color: #fff;
+    transition:
+        transform 0.26s var(--ease),
+        background 0.26s var(--ease),
+        border-color 0.26s var(--ease);
+}
+
+.contact-checklist__icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-checklist__item:hover .contact-checklist__icon {
+    transform: rotate(-5deg) scale(1.06);
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+}
+
+.contact-checklist__item h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+.contact-checklist__item p {
+    margin: 7px 0 0;
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 12.5px;
+    line-height: 1.55;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .contact-checklist {
+        padding: 39px 0;
+    }
+
+    .contact-checklist__panel {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        min-height: auto;
+    }
+
+    .contact-checklist__content {
+        max-width: 760px;
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    .contact-checklist__text {
+        max-width: 720px;
+        margin-inline: auto;
+    }
+
+    .contact-checklist__items {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-checklist__item {
+        min-height: 112px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .contact-checklist {
+        padding: 34px 0;
+    }
+
+    .contact-checklist__container {
+        width: min(100% - 32px, var(--container));
+    }
+
+    .contact-checklist__panel {
+        padding: 24px;
+        border-radius: 22px;
+    }
+
+    .contact-checklist__items {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .contact-checklist__item {
+        min-height: auto;
+        grid-template-columns: 40px 1fr;
+        padding: 14px;
+        border-radius: 16px;
+    }
+
+    .contact-checklist__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact-checklist__icon svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-checklist__container {
+        width: min(100% - 24px, var(--container));
+    }
+
+    .contact-checklist__panel {
+        padding: 20px;
+    }
+
+    .contact-checklist__title {
+        font-size: clamp(32px, 11vw, 46px);
+    }
+
+    .contact-checklist__text {
+        font-size: 13.5px;
+        line-height: 1.62;
+    }
+
+    .contact-checklist__item h3 {
+        font-size: 14px;
+    }
+
+    .contact-checklist__item p {
+        font-size: 12px;
+    }
+}
