@@ -4685,3 +4685,27 @@ html {
         border-radius: 20px;
     }
 }
+
+/* =========================
+   SERVICES PAGE COMPACT SECTIONS
+   Half vertical padding only for selected services sections
+========================= */
+
+.services-section--compact {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+@media (max-width: 900px) {
+    .services-section--compact {
+        padding-top: 37px;
+        padding-bottom: 37px;
+    }
+}
+
+@media (max-width: 640px) {
+    .services-section--compact {
+        padding-top: 31px;
+        padding-bottom: 31px;
+    }
+}
